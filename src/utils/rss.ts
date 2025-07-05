@@ -13,8 +13,8 @@ export const fetchBlogPosts = async (): Promise<BlogPost[]> => {
     const response = await fetch(apiUrl, {
       headers: {
         "Cache-Control": "no-cache",
-        "Pragma": "no-cache"
-      }
+        Pragma: "no-cache",
+      },
     });
 
     if (!response.ok) {
